@@ -215,8 +215,11 @@ header a{
     font-size: 25px;
 
 }
-.info{
-    display: flex;
+.about-me .info{
+    /* display: flex; */
+    /* flex-basis: 30%; */
+
+    
 }
 .about-me h2{
     color: rgb(255, 255, 255);
@@ -227,6 +230,8 @@ header a{
     margin-bottom: 30px;
 
 }
+
+
 .about-me h2:after{
     content:'';
     position: absolute;
@@ -238,10 +243,11 @@ header a{
     background-color: rgb(47, 247, 137);
 }
 
-.about-me .col-center, .about-me .col-right{
+.about-me .col-1, .about-me .col-center , .about-me .col-right{
     /* width: 50%; */
     /* float:left; */
     flex: 1;
+    /* flex-basis:30%; */
 }
 
 .about-me .col-center img{
@@ -405,6 +411,7 @@ header a{
     width: 33.3333%;
     display:inline-block;
     float:left;
+    padding-left: 5%;
 }
 .my-skills i{
     font-size: 50px;
@@ -415,7 +422,46 @@ header a{
 }
 
 
+@media (min-width: 900px){
+    .info{
+        display:flex;
+    }
+}
 
+@media (max-width: 900px) {
+    .about-me .col-center img {
+        max-height: 130px;
+        margin-top: 30px;
+        margin:auto;
+    }
+    .about-me{
+        height:100%;
+    }
+
+}       
+
+@media (max-width: 767px) {
+    .about-me{
+        height:100%;
+    }
+    .video-background {
+        background: url('../img/tower.jpg') center center / cover no-repeat;
+        }
+        .video-foreground{
+            display:none;
+        }
+    
+        .underline span {
+            font-size: 25px;
+
+        }
+        .about-me .col-center img {
+            max-height: 130px;
+            margin-top: 30px;
+        margin:auto;
+        
+        }
+}
 
 @media (min-aspect-ratio: 16/9) {
     .video-foreground { height: 300%; top: -100%; }
@@ -429,16 +475,4 @@ header a{
         font-size: 40px;
         
     }
-}
-
-@media (max-width: 767px) {
-    .video-background {
-      background: url('../img/tower.jpg') center center / cover no-repeat;
-    }
-  
-
-  .video-background iframe  {
-      display: none;
-    }
-  }
 }
