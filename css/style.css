@@ -17,9 +17,10 @@ nav {
     /* background-color: rgba(255,255,255,0.2); */
     background-color: rgba(30, 15, 78, 0.233);
     height: 60px;
+    position: fixed;
+    width: 100%;
 
  }
-
  nav:after{
      content:'';
      display: block;
@@ -60,6 +61,11 @@ nav {
  color:white;
  text-transform:  uppercase;
  padding: 10px 10px 20px 10px;
+ }
+
+ .main-list{
+     float: right;
+
  }
  /* .menu ul li a:hover{
      background-color: blue;
@@ -156,6 +162,8 @@ header a{
 
 .hero-container p{
     text-shadow: 2px 2px 2px #000; 
+    margin-top: 140px;
+    
 }
 .btn-work, .btn-contact {
     font-weight: bold;
@@ -433,6 +441,11 @@ header a{
     height: 100vh;
     float: left;
 }
+.my-projects:after{
+    content:'';
+    display: block;
+    clear: both;
+}
 
 .my-projects h2{
     color: rgb(255, 255, 255);
@@ -532,9 +545,11 @@ header a{
     left: 50%;
 }
 
-.hover li .img{
+.hover img{
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    
 }
 
 
@@ -542,9 +557,17 @@ header a{
 
 
 @media (min-width: 900px){
+     .menu .main-list{
+        display: inline-block;
+    }
+    
     .info{
         display:flex;
     }
+    .menu-on i{
+        display: none;
+    }
+   
 }
 
 @media (max-width: 900px) {
@@ -557,13 +580,38 @@ header a{
         height:100%;
     }
 
-}   
+}  
 
 
 @media (max-width: 767px) {
+
+    .menu-on i{
+        font-size: 25px;
+        position: fixed;
+        right: 20px;
+        top: 0;
+        z-index: 100;
+        padding: 5px;
+    }
+    .menu ul li{
+        display: block;
+    }
+
+    .menu ul {
+        background-color: #6c4ca3;
+        /* margin-right: 20px; */
+        position: fixed;
+        right: 0;
+        top: 0;
+        min-width: 200;
+        z-index: 10;
+        display: none;
+    }
+
     .about-me{
         height:100%;
     }
+
     .video-background {
         background: url('../img/tower.jpg') center center / cover no-repeat;
         }
@@ -578,9 +626,24 @@ header a{
         .about-me .col-center img {
             max-height: 130px;
             margin-top: 30px;
-        margin:auto;
-        
+            margin:auto;
         }
+
+        .skills-block{
+            display: block;
+        }
+        .hover li{
+            margin:0 auto;
+            text-align: center;
+            display: block;
+        }
+        .hover li img{
+background-position: cover;
+        }
+        .my-projects{
+            height: 100%;
+        }
+
 }
 
 @media (min-aspect-ratio: 16/9) {

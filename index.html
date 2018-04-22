@@ -15,6 +15,14 @@
 
 
 </head>
+
+<script>
+        $(document).ready(function(){
+            $(".ion-android-menu").click(function(){
+                $(".menu-list").toggle();
+            });
+        });
+        </script>
 <body>
 
     <!-- NAVIGATION BAR SECTION -->
@@ -23,8 +31,13 @@
         <div class="logo">
             <img src="img/kjlogowhite.png" width="50px" alt="logo">
         </div>
-        <div class="menu">
-            <ul>
+
+
+        <div class="menu-on">
+            <i class="ion-android-menu"></i>
+        </div>
+        <div class="menu menu2">
+            <ul class="menu-list main-menu">
                 <li>
                     <a class="cool-link" href="#" >Home</a>
                 </li>
@@ -41,8 +54,40 @@
                     <a class="cool-link" href="#">Contact</a>
                 </li>
             </ul>
-        </div>
+        </div>   
+    
     </nav>
+
+    <nav>
+            <div class="logo">
+                <img src="img/kjlogowhite.png" width="50px" alt="logo">
+            </div>
+    
+    
+            <div class="menu-on">
+                <i class="ion-android-menu"></i>
+            </div>
+            <div class="menu menu2">
+                <ul class= "main-menu">
+                    <li>
+                        <a class="cool-link" href="#" >Home</a>
+                    </li>
+                    <li>
+                        <a class="cool-link" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="cool-link" href="#">Skills</a>
+                    </li>
+                    <li>
+                        <a class="cool-link" href="#">Work</a>
+                    </li>
+                    <li>
+                        <a class="cool-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>   
+        
+        </nav>
 
     <!-- HEADER SECTION -->
     <div class="video-background">
@@ -137,6 +182,7 @@
 
 <div class="my-skills">
     <h2>my skills</h2>
+    <div class="skills-block">
     <div class="skills-left">
     <i class="ion-iphone"></i>
     <h4>responsive web designer</h4>
@@ -154,6 +200,8 @@
 </div>
 </div>
 
+</div>
+
 <!-- MY PROJECTS SECTION -->
 
 <div class="my-projects">
@@ -161,6 +209,7 @@
     <div class="cielo">
         <ul class="hover">
             <li>
+                
                 <img src="img/imgmobilapp.png" alt="mobileapp">
                 <h3>Mobile App</h3>
                 <span class="h1"></span>
