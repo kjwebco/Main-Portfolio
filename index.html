@@ -3,15 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
+    <title>Web Development</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="css/ionicons.min.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Judson:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Judson:400,400italic,700' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -26,7 +27,7 @@
 <body>
 
     <!-- NAVIGATION BAR SECTION -->
-<div class="wallpaper">
+<div id="home" class="wallpaper">
     <nav>
         <div class="logo">
             <img src="img/kjlogowhite.png" width="50px" alt="logo">
@@ -39,19 +40,19 @@
         <div class="menu menu2">
             <ul class="menu-list main-menu">
                 <li>
-                    <a class="cool-link" href="#" >Home</a>
+                    <a class="cool-link" href="#home">Home</a>
                 </li>
                 <li>
-                    <a class="cool-link" href="#">About</a>
+                    <a class="cool-link" href="#about-section">About</a>
                 </li>
                 <li>
-                    <a class="cool-link" href="#">Skills</a>
+                    <a class="cool-link" href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a class="cool-link" href="#">Work</a>
+                    <a class="cool-link" href="#project-section">Work</a>
                 </li>
                 <li>
-                    <a class="cool-link" href="#">Contact</a>
+                    <a class="cool-link" href="mailto:kjendreas@gmail.com">Contact</a>
                 </li>
             </ul>
         </div>   
@@ -70,19 +71,19 @@
             <div class="menu menu2">
                 <ul class= "main-menu">
                     <li>
-                        <a class="cool-link" href="#" >Home</a>
+                        <a class="cool-link" href="#home">Home</a>
                     </li>
                     <li>
-                        <a class="cool-link" href="#">About</a>
+                        <a class="cool-link" href="#about-section">About</a>
                     </li>
                     <li>
-                        <a class="cool-link" href="#">Skills</a>
+                        <a class="cool-link" href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a class="cool-link" href="#">Work</a>
+                        <a class="cool-link" href="#project-section">Work</a>
                     </li>
                     <li>
-                        <a class="cool-link" href="#">Contact</a>
+                        <a class="cool-link" href="mailto:kjendreas@gmail.com">Contact</a>
                     </li>
                 </ul>
             </div>   
@@ -110,12 +111,12 @@
                data-rotate='[ "A Web Developer", "A Web Designer", "A Full-Stack Developer"]'></span></span>
           </h1>
 
-        <a href="#" class="btn-work">VIEW WORK</a>
-        <a href="#" class="btn-contact">CONTACT ME</a>
+        <a href="#project-section" class="btn-work">VIEW WORK</a>
+        <a href="mailto:kjendreas@gmail.com" class="btn-contact">CONTACT ME</a>
     </header>
 </div>
  <!-- ABOUT ME SECTION -->
-<div class="about-me">
+<div id="about-section" class="about-me">
     <h2>about me</h2>
         <div class="info">
             <div class="col1">
@@ -180,23 +181,29 @@
 
 <!-- MY SKILLS SECTION -->
 
-<div class="my-skills">
+<div id="skills" class="my-skills">
     <h2>my skills</h2>
     <div class="skills-block">
     <div class="skills-left">
     <i class="ion-iphone"></i>
     <h4>responsive web designer</h4>
-    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+    <p>Experience building beautiful, responsive, and engaging HTML interfaces.
+        Hands-on experience with MS SQL Database
+    </p>
 </div>
     <div class="skills-center">
     <i class="ion-social-nodejs"></i>
     <h4>javascript</h4>
-    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+    <p>Experience building web applications in Node.js 
+        Experience in using node frameworks, such as Express.js
+        Experience with HTML5/CSS3, building complex web user interfaces
+        Worked with UI/UX teams to translate wireframes and comps into interactive HTML/CSS/JavaScript
+    </p>
 </div>
     <div class="skills-right">
     <i class="ion-social-wordpress"></i>
     <h4>wordpress</h4>
-    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+    <p>Familiar with designing, coding and modifying in wordpress. Expert at web graphics design, HTML, CSS, and JavaScript. Strong knowledge of best practices for HTML/CSS and web site layout. Know and understand Google SEO best practices</p>
 </div>
 </div>
 
@@ -204,29 +211,37 @@
 
 <!-- MY PROJECTS SECTION -->
 
-<div class="my-projects">
+<div id="project-section" class="my-projects">
         <h2>my projects</h2>
     <div class="cielo">
         <ul class="hover">
             <li>
                 
-                <img src="img/imgmobilapp.png" alt="mobileapp">
-                <h3>Mobile App</h3>
-                <span class="h1"></span>
-                <span class="h2"></span>
-                <span class="h3"></span>
-            </li>
-
-            <li>
-                <img src="img/imgwebapp.png" alt="mobileapp">
+                <img src="img/imgwebapp.png" alt="web app" class="center">
                 <h3>Web App</h3>
+                <a href="app.html">
+                   <div class="project-link">
                 <span class="h1"></span>
                 <span class="h2"></span>
                 <span class="h3"></span>
+                </div> 
+                </a>
             </li>
 
             <li>
-                <img src="img/imgwebdesign.png" alt="mobileapp">
+                <img src="img/imgwebdesign.png" alt="web design" class="center">
+                <h3>Web Design</h3>
+                <a href="web.html">
+                <div class="project-link">
+                <span class="h1"></span>
+                <span class="h2"></span>
+                <span class="h3"></span>
+                </div>
+                </a>
+            </li>
+
+            <li>
+                <img src="img/imgmobileapp.png" alt="mobile app" class="center">
                 <h3>Web Design</h3>
                 <span class="h1"></span>
                 <span class="h2"></span>
@@ -235,6 +250,15 @@
         </ul>
 
     </div>
+
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/kevin-jendreas/" target="_blank"> <img class="image" src="img/LinkedinMod.svg" style="width: 30px; color: grey"></a>
+            <a href="https://github.com/kjwebco" target="_blank"> <img class="image" src="img/github-svg.svg" style="width: 30px; color: grey"></a>
+            <a href="https://www.behance.net/KJWebCo" target="_blank"> <img class="image" src="img/behancegray.svg" style="width: 30px; color: grey"></a>
+            <a href="https://twitter.com/KJWebCo" target="_blank"><img class="image" src="img/twitter_altgray.svg" style="width: 30px; color: grey"></a>
+        </div>
+
+    
 </div>
 
 <script src="js/main.js"></script>

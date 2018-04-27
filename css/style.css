@@ -15,10 +15,11 @@ body {
 /* -------------NAVIGATION SECTION--------------------- */
 nav {
     /* background-color: rgba(255,255,255,0.2); */
-    background-color: rgba(30, 15, 78, 0.233);
+    background-color: rgba(90, 89, 92, 0.397);
     height: 60px;
     position: fixed;
     width: 100%;
+    z-index: 100;
 
  }
  nav:after{
@@ -385,6 +386,7 @@ header a{
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    
 
 }
 .my-skills:after{
@@ -398,10 +400,10 @@ header a{
 
 
 .my-skills h2{
-    margin: 0;
+    margin-top: 30px;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .my-skills h2:after{
@@ -445,6 +447,7 @@ header a{
     content:'';
     display: block;
     clear: both;
+
 }
 
 .my-projects h2{
@@ -549,6 +552,8 @@ header a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    width: 100%;
+    height:100%;
     
 }
 
@@ -595,10 +600,11 @@ header a{
     }
     .menu ul li{
         display: block;
+        margin: auto 10px;
     }
 
     .menu ul {
-        background-color: #6c4ca3;
+        background-color: #6b6b6bb4;
         /* margin-right: 20px; */
         position: fixed;
         right: 0;
@@ -606,10 +612,16 @@ header a{
         min-width: 200;
         z-index: 10;
         display: none;
+        margin-top: 60px;
     }
 
     .about-me{
         height:100%;
+    }
+
+    .my-skills .skills-left, .my-skills .skills-center,.my-skills .skills-right{
+    width: 100%;
+
     }
 
     .video-background {
@@ -628,21 +640,40 @@ header a{
             margin-top: 30px;
             margin:auto;
         }
-
-        .skills-block{
+        /* .skills-block{
+            display: flex;
+            flex-wrap: wrap; 
+        } */
+        /* .skills-left, .skills-center, .skills-right{
+            display: flex;
+    flex-wrap: wrap;
+        } */
+        /* .skills-block{
             display: block;
-        }
-        .hover li{
-            margin:0 auto;
-            text-align: center;
-            display: block;
-        }
-        .hover li img{
-background-position: cover;
-        }
+        } */
         .my-projects{
             height: 100%;
         }
+        /* .my-projects:after{
+            content:'';
+            display: block;
+            clear: both; */
+        
+        }
+        .my-projects .cielo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        /* .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        } */
+          
 
 }
 
