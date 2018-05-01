@@ -556,6 +556,45 @@ header a{
     height:100%;
     
 }
+/* <!-- SOCIAL SECTION --> */
+
+.social{
+   background-color: grey; 
+}
+
+.social:after{
+    content:'';
+    display: block;
+    clear: both;
+
+}
+
+.social-container{
+    width: 80%;
+    margin:0 auto;
+    background-color: grey; 
+
+}
+.social-container i{
+    float: left;
+
+}
+
+.col-1 p,
+.col-2 p,
+.col-3 p{
+    display: inline-block;
+}
+
+.col-1,
+.col-2,
+.col-3{
+    width: 33.33333%;
+    display: inline-block;
+    float: left;
+    background-color: grey; 
+    
+}
 
 
 
@@ -657,9 +696,9 @@ header a{
         /* .my-projects:after{
             content:'';
             display: block;
-            clear: both; */
+            clear: both;
         
-        }
+        } */
         .my-projects .cielo{
             display: block;
             margin-left: auto;
@@ -673,7 +712,7 @@ header a{
             margin-right: auto;
             width: 50%;
         } */
-          
+     
 
 }
 
