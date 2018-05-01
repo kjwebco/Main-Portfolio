@@ -559,8 +559,17 @@ header a{
 /* <!-- SOCIAL SECTION --> */
 
 .social{
-   background-color: grey; 
+   background-color: rgb(181, 181, 181); 
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 50px;
+
 }
+.social h2{
+    text-align: center;
+    margin-top: 50px;
+
+ }
 
 .social:after{
     content:'';
@@ -571,12 +580,17 @@ header a{
 
 .social-container{
     width: 80%;
-    margin:0 auto;
-    background-color: grey; 
-
+    margin:0 auto; 
+    text-align: left;
+    
 }
 .social-container i{
     float: left;
+    margin-top: 17px;
+    margin-right: 20px;
+    font-size: 24px;
+    color: rgb(47, 247, 137);
+
 
 }
 
@@ -586,16 +600,24 @@ header a{
     display: inline-block;
 }
 
+.col-3 p{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
 .col-1,
 .col-2,
 .col-3{
     width: 33.33333%;
     display: inline-block;
     float: left;
-    background-color: grey; 
     
 }
 
+.text-bold{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
 
 
 
