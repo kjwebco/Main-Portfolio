@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Palanquin+Dark|Pattaya');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
 *{
     box-sizing: border-box;
@@ -58,10 +59,10 @@ nav {
  }
 
  .menu ul li a{
- text-decoration: none;
- color:white;
- text-transform:  uppercase;
- padding: 10px 10px 20px 10px;
+    text-decoration: none;
+    color:white;
+    text-transform:  uppercase;
+    padding: 10px 10px 20px 10px;
  }
 
  .main-list{
@@ -176,25 +177,25 @@ header a{
     border-width: 1px;
 }
 .btn-work{
-    background-color:rgb(25, 19, 176);
+    background-color:#419BA3;
     margin:15px 20px;
     border-color: white;
 }
 .btn-work:hover{
     background-color: white;
-    color:rgb(25, 19, 176);
+    color:#419BA3;
     transition: all 0.5s ease;
     filter: drop-shadow(10px 15px 10px rgb(0, 5, 6));
 }
 
 .btn-contact{
     background-color:white;
-    color:rgb(25, 19, 176);
-    border-color:rgb(25, 19, 176);
+    color:#419BA3;
+    border-color:#419BA3;
 }
 
 .btn-contact:hover{
-    background-color: rgb(25, 19, 176);
+    background-color: #419BA3;
     color:white;
     transition: all 0.5s ease;
     filter: drop-shadow(10px 15px 10px rgb(0, 5, 6));
@@ -237,7 +238,8 @@ header a{
     font-weight: bold;
     position: relative;
     margin-bottom: 30px;
-
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
 }
 
 
@@ -249,7 +251,7 @@ header a{
     margin-left: -40px;
     left: 50%;
     bottom: -10px;
-    background-color: rgb(47, 247, 137);
+    background-color: #419BA3;
 }
 
 .about-me .col-1, .about-me .col-center , .about-me .col-right{
@@ -282,12 +284,14 @@ header a{
   .about-me .col1 p{
     color:#ffffff;
     font-size:16px;
-    line-height: 1.6;
+    line-height: 3;
+    font-family: 'Fjalla One', sans-serif;
   }
   .about-me .info .col-right h1{
     color:#ffffff;
     /* font-size:35px; */
     line-height: 1.6;
+    font-family: 'Fjalla One', sans-serif;
   }
   
   .skillbar {
@@ -366,7 +370,7 @@ header a{
 
 
 .about-me a{
-    background-color: blue;
+    background-color: #419BA3;;
     padding: 10px 25px;
     text-decoration: none;
     color: white;
@@ -374,11 +378,11 @@ header a{
     display: inline-block;
     font-size: 17px;
     text-transform: uppercase;
-    border: 1px solid blue;
+    border: 1px solid white;
 }
 .about-me a:hover{
    background-color: white;
-   color: blue;
+   color: #419BA3;
 }
 
 .my-skills{
@@ -400,10 +404,13 @@ header a{
 
 
 .my-skills h2{
+    color: white;
     margin-top: 30px;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
 }
 
 .my-skills h2:after{
@@ -414,7 +421,7 @@ header a{
     margin-left: -40px;
     left: 50%;
     bottom: -10px;
-    background-color: rgb(47, 247, 137);
+    background-color: #419BA3;
 }
 
 .my-skills .skills-left, .my-skills .skills-center,.my-skills .skills-right{
@@ -426,10 +433,8 @@ header a{
 }
 .my-skills i{
     font-size: 50px;
-    color: linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0)
-    )
+    color: #419BA3;
+    filter: drop-shadow(5px 5px 5px rgb(0, 5, 6));
 }
 
 /* <!-- MY PROJECTS SECTION --> */
@@ -457,7 +462,8 @@ header a{
     font-weight: bold;
     position: relative;
     margin-bottom: 30px;
-
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
 }
 
 
@@ -469,7 +475,7 @@ header a{
     margin-left: -40px;
     left: 50%;
     bottom: -10px;
-    background-color: rgb(47, 247, 137);
+    background-color: #419BA3;
 }
 
 .cielo{
@@ -507,7 +513,7 @@ header a{
     left: 0;
     width: 0%;
     height: 135px;
-    background-color: #8770af;
+    background-color:#419BA3;;
     transition-duration: 0.8s;
 }
 
@@ -515,7 +521,7 @@ header a{
     top: 133px;
     width: 100%;
     left: 293px;
-    background-color: #6c4ca3;
+    background-color: rgb(22, 127, 137);
 
 }
 
@@ -559,7 +565,7 @@ header a{
 }
 /* <!-- SOCIAL SECTION --> */
 .social{
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(72, 72, 72);
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
@@ -567,6 +573,7 @@ header a{
     /* height: 100vh; */
     float: left;
 }
+
 .social:after{
     content:'';
     display: block;
@@ -581,7 +588,8 @@ header a{
     font-weight: bold;
     position: relative;
     margin-bottom: 30px;
-
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
 }
 
 
@@ -593,7 +601,7 @@ header a{
     margin-left: -40px;
     left: 50%;
     bottom: -10px;
-    background-color: rgb(47, 247, 137);
+    background-color: #419BA3;
 }
 
 
@@ -601,18 +609,21 @@ header a{
     width: 80%;
     margin:0 auto; 
     text-align: left;
-    
 }
+
 .social-container i{
     float: left;
     margin-top: 17px;
     margin-right: 20px;
     font-size: 24px;
-    color: rgb(47, 247, 137);
-
-
+    color: rgb(183, 183, 183);
 }
 
+.social-container p{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    
+}
 .col-1 p,
 .col-2 p,
 .col-3 p{
@@ -623,6 +634,9 @@ header a{
     margin-bottom: 10px;
     margin-top: 15px;
     line-height: 7px;
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .col-1,
@@ -635,8 +649,33 @@ header a{
 }
 
 .text-bold{
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    color:#419BA3;
+    font-size: 25px;
+    text-align: center;
+}
+.line1 a{
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+}
+.line1 .text-bold{
+    text-transform: uppercase;
+}
+
+footer{
+    background-color: #419BA3;
+    text-align: center;
+    color:white;
+    
+}
+.footer-text{
+    padding-top: 20px;
+}
+footer i{
+    font-size: 20px;
+    
 }
 
 
@@ -733,27 +772,44 @@ header a{
             width: 80%;
         }
 
+       
+        .social-container .col-1, .social-container .col-2{
+            display: flex;
+            justify-content: center;
+        }  
+
         .col-1,
         .col-2,
         .col-3{
             display: block;
             width: 80%;
         } 
-        .social-container{
-            text-align: center;
-        }  
+
         .col-1 i,
         .col-2 i,
         .col-3 i{
-        position: absolute;
-        left: 20%;
+            margin-right: 5px;
+            margin-left: 15px;
         } 
-        .col-1,
-        .col-2,
+        
+        .col1 .line1
         {
-            display: block;
-            width: 50%;
+            display: flex;
+            justify-content: center;
+          
         } 
+        .col2 .line2
+        {
+            margin: 10px;
+          
+        } 
+       
+        .social-container .line1, .social-container .line1{
+            text-align: justify;
+            text-justify: inter-word;
+           
+        }
+        
 
 }
 
