@@ -23,6 +23,7 @@ nav {
     z-index: 100;
 
  }
+
  nav:after{
      content:'';
      display: block;
@@ -101,6 +102,19 @@ nav {
     width: 100%;
     transition: width .3s;
 }
+
+/* -------------------------HERO IMAGE PARALLAX SECTION------------------------ */
+
+.hero-image {
+    background-image: url("../img/webdev.jpg");
+    width: 100%;
+      height: 70vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+
+
 /* -------------------------HEADER SECTION------------------------ */
 
 .video-background{
@@ -668,16 +682,130 @@ footer{
     background-color: #419BA3;
     text-align: center;
     color:white;
+    padding: 30px 30px;
     
 }
+footer:after {
+    content:'';
+    display: block;
+    clear: both;
+}
 .footer-text{
-    padding-top: 20px;
+    float:left;
+    margin-top: 25px;
+
+}
+.footer-text p{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 footer i{
     font-size: 20px;
-    
+    float: right;
+    padding: 0 5px;
+}
+.social-footer{
+    float: right;
+    margin-top: 25px;
 }
 
+/* <!-- MOBILE WEB PAGE --> */
+.mobile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#content-area {
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    }
+    /* app section */
+    #content-area .left{
+      text-align: center;
+      z-index: 5;
+      float: left;
+      width: 50%;
+      height: 400px;
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* align vertical */
+    }
+    
+    #content-area .right{
+      float: left;
+      width: 50%;
+      height: 400px;
+      /* background: aquamarine; */
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* align vertical */
+    }
+    #content-area .right .description p{
+      color: grey;
+      padding: 10px;
+      line-height: 25px;
+    }
+    
+    
+    /* web section */
+    #content-area2{
+      margin-top: 70px;
+      width:100%;
+      height:100%;
+      overflow: auto;
+      }
+      #content-area2 .left{
+        height: 500px;
+      }
+      #content-area2 .right{
+        height: 500px;
+      }
+    
+    .web{
+      background: white;
+      /* height: 100vh; */
+    }
+    #content-area2 .left .description{
+    
+    }
+    
+    #content-area2 .description .webtext{
+    
+      padding: 0;
+      line-height: normal;
+      }
+    #content-area2 .description .webimage{
+      margin-top: 10px;
+      /* margin-bottom: 80px; */
+    
+    }
+    #content-area2 .left{
+      float: left;
+      width: 50%;
+      display: flex;
+      justify-content: center; /* align horizontal */
+      }
+    
+      #content-area2 .left .description{
+        text-align: center;
+      }
+    
+    #content-area2 .right{
+    float: right;
+    width: 50%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    }
+    
+    #content-area2 .right .description{
+      text-align: center;
+    }
+    .aston{
+      margin-top:75px;
+    }
 
 
 
@@ -714,7 +842,7 @@ footer i{
         font-size: 25px;
         position: fixed;
         right: 20px;
-        top: 0;
+        top: 10px;
         z-index: 100;
         padding: 5px;
     }
@@ -762,16 +890,25 @@ footer i{
         }
        
         .my-projects{
-            height: 100%;
+            display: table;
+            float: none;
+            /* display:flex;  */
+            /* justify-content: center; */
         }
-        
+        .my-projects span{
+          
+        }
+
         .my-projects .cielo{
+    
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 80%;
+            width:70%;
+            /* display:flex;  */
+            /* justify-content: center; */
+            
         }
-
        
         .social-container .col-1, .social-container .col-2, .social-container .col-3{
             width: 100%;
@@ -801,7 +938,7 @@ footer i{
         }
         .line1 i{
             margin-top: 0;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .col-3{
@@ -820,10 +957,30 @@ footer i{
             display:inline-block; 
             justify-content: center;
         }
-       
-       
-        
 
+        footer{
+            display: none;
+        }
+
+
+        #content-area .left{
+            width: 100%;
+          }
+          #content-area .right{
+            width: 100%;
+          }
+          #about{
+            /* margin-top: 50px; */
+            height: 100%
+            /* overflow: auto; */
+          }
+        
+          #content-area2 .left{
+            width: 100%;
+          }
+          #content-area2 .right{
+            width: 100%;
+          }
 }
 
 @media (min-aspect-ratio: 16/9) {
